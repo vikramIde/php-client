@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class BlockCypher\Api\HDAddress</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-BlockCypher.Api.html" title="Summary of BlockCypher\Api"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-BlockCypher.html">
+							BlockCypher<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-BlockCypher.Api.html">
+							Api						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Auth.html">
+							Auth						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Builder.html">
+							Builder						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Client.html">
+							Client						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Common.html">
+							Common						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Converter.html">
+							Converter						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Core.html">
+							Core						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Crypto.html">
+							Crypto						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Handler.html">
+							Handler						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Rest.html">
+							Rest						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Transport.html">
+							Transport						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Validation.html">
+							Validation						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BlockCypher.Api.Address.html">Address</a></li>
+				<li><a href="class-BlockCypher.Api.AddressBalance.html">AddressBalance</a></li>
+				<li><a href="class-BlockCypher.Api.AddressKeyChain.html">AddressKeyChain</a></li>
+				<li><a href="class-BlockCypher.Api.AddressList.html">AddressList</a></li>
+				<li><a href="class-BlockCypher.Api.Block.html">Block</a></li>
+				<li><a href="class-BlockCypher.Api.Blockchain.html">Blockchain</a></li>
+				<li><a href="class-BlockCypher.Api.Error.html">Error</a></li>
+				<li><a href="class-BlockCypher.Api.Faucet.html">Faucet</a></li>
+				<li><a href="class-BlockCypher.Api.FaucetResponse.html">FaucetResponse</a></li>
+				<li><a href="class-BlockCypher.Api.FullAddress.html">FullAddress</a></li>
+				<li class="active"><a href="class-BlockCypher.Api.HDAddress.html">HDAddress</a></li>
+				<li><a href="class-BlockCypher.Api.HDChain.html">HDChain</a></li>
+				<li><a href="class-BlockCypher.Api.HDWallet.html">HDWallet</a></li>
+				<li><a href="class-BlockCypher.Api.HDWalletGenerateAddressResponse.html">HDWalletGenerateAddressResponse</a></li>
+				<li><a href="class-BlockCypher.Api.MicroTX.html">MicroTX</a></li>
+				<li><a href="class-BlockCypher.Api.NullData.html">NullData</a></li>
+				<li><a href="class-BlockCypher.Api.PaymentForward.html">PaymentForward</a></li>
+				<li><a href="class-BlockCypher.Api.PaymentForwardCallback.html">PaymentForwardCallback</a></li>
+				<li><a href="class-BlockCypher.Api.RelatedResources.html">RelatedResources</a></li>
+				<li><a href="class-BlockCypher.Api.TX.html">TX</a></li>
+				<li><a href="class-BlockCypher.Api.TXConfidence.html">TXConfidence</a></li>
+				<li><a href="class-BlockCypher.Api.TXHex.html">TXHex</a></li>
+				<li><a href="class-BlockCypher.Api.TXInput.html">TXInput</a></li>
+				<li><a href="class-BlockCypher.Api.TXOutput.html">TXOutput</a></li>
+				<li><a href="class-BlockCypher.Api.TXRef.html">TXRef</a></li>
+				<li><a href="class-BlockCypher.Api.TXSkeleton.html">TXSkeleton</a></li>
+				<li><a href="class-BlockCypher.Api.Wallet.html">Wallet</a></li>
+				<li><a href="class-BlockCypher.Api.WalletGenerateAddressResponse.html">WalletGenerateAddressResponse</a></li>
+				<li><a href="class-BlockCypher.Api.WalletInfo.html">WalletInfo</a></li>
+				<li><a href="class-BlockCypher.Api.WebHook.html">WebHook</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class HDAddress</h1>
+
+
+	<div class="description">
+	<p>Class HDAddress</p>
+
+<p>An HD Address object contains an address and its BIP32 HD path (location of the address in the HD tree).
+It also contains the hex-encoded public key when returned from the Derive Address in Wallet endpoint.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-BlockCypher.Common.BlockCypherModel.html"><span>BlockCypher\Common\BlockCypherModel</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-BlockCypher.Common.BlockCypherBaseModel.html"><span>BlockCypher\Common\BlockCypherBaseModel</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>BlockCypher\Api\HDAddress</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BlockCypher.html">BlockCypher</a>\<a href="namespace-BlockCypher.Api.html">Api</a><br>
+		<b>Package:</b> BlockCypher\Api<br>
+
+			<b>Located at</b> <a href="source-class-BlockCypher.Api.HDAddress.html#7-86" title="Go to source code">BlockCypher/Api/HDAddress.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="getAddress" id="_getAddress">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getAddress">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDAddress.html#21-29" title="Go to source code">getAddress</a>( )</code>
+
+			<div class="description short">
+				<p>Standard address representation.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Standard address representation.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setAddress" id="_setAddress">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setAddress">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDAddress.html#31-41" title="Go to source code">setAddress</a>( <span>string <var>$address</var></span> )</code>
+
+			<div class="description short">
+				<p>Standard address representation.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Standard address representation.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$address</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPath" id="_getPath">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPath">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDAddress.html#43-51" title="Go to source code">getPath</a>( )</code>
+
+			<div class="description short">
+				<p>The BIP32 path of the HD address.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The BIP32 path of the HD address.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setPath" id="_setPath">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setPath">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDAddress.html#53-63" title="Go to source code">setPath</a>( <span>string <var>$path</var></span> )</code>
+
+			<div class="description short">
+				<p>The BIP32 path of the HD address.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The BIP32 path of the HD address.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPublic" id="_getPublic">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPublic">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDAddress.html#65-73" title="Go to source code">getPublic</a>( )</code>
+
+			<div class="description short">
+				<p>Contains the hex-encoded public key if returned by Derive Address in Wallet endpoint. Optional.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Contains the hex-encoded public key if returned by Derive Address in Wallet endpoint. Optional.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setPublic" id="_setPublic">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setPublic">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDAddress.html#75-85" title="Go to source code">setPublic</a>( <span>string <var>$public</var></span> )</code>
+
+			<div class="description short">
+				<p>Contains the hex-encoded public key if returned by Derive Address in Wallet endpoint. Optional.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Contains the hex-encoded public key if returned by Derive Address in Wallet endpoint. Optional.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$public</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-BlockCypher.Common.BlockCypherBaseModel.html#methods">BlockCypher\Common\BlockCypherBaseModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_addError">addError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getAllErrorMessages">getAllErrorMessages()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getError">getError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getErrorMessages">getErrorMessages()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getErrors">getErrors()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_removeError">removeError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_setError">setError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_setErrors">setErrors()</a></code>
+			</p>
+		</div>
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-BlockCypher.Common.BlockCypherModel.html#methods">BlockCypher\Common\BlockCypherModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___construct">__construct()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___get">__get()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___isset">__isset()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___set">__set()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___toString">__toString()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___unset">__unset()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_fromArray">fromArray()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_fromJson">fromJson()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_getList">getList()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_setCredential"><span class="deprecated">setCredential()</span></a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_toArray">toArray()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_toJSON">toJSON()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-BlockCypher.Common.BlockCypherModel.html#properties">BlockCypher\Common\BlockCypherModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#$credential"><var>$credential</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

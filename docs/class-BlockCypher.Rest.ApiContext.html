@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class BlockCypher\Rest\ApiContext</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-BlockCypher.Rest.html" title="Summary of BlockCypher\Rest"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-BlockCypher.html">
+							BlockCypher<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-BlockCypher.Api.html">
+							Api						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Auth.html">
+							Auth						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Builder.html">
+							Builder						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Client.html">
+							Client						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Common.html">
+							Common						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Converter.html">
+							Converter						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Core.html">
+							Core						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Crypto.html">
+							Crypto						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Handler.html">
+							Handler						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-BlockCypher.Rest.html">
+							Rest						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Transport.html">
+							Transport						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Validation.html">
+							Validation						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-BlockCypher.Rest.ApiContext.html">ApiContext</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BlockCypher.Rest.IResource.html">IResource</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class ApiContext</h1>
+
+
+	<div class="description">
+	<p>Class ApiContext</p>
+
+<p>Call level parameters such as request id, credentials etc</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BlockCypher.html">BlockCypher</a>\<a href="namespace-BlockCypher.Rest.html">Rest</a><br>
+		<b>Package:</b> BlockCypher\Rest<br>
+
+			<b>Located at</b> <a href="source-class-BlockCypher.Rest.ApiContext.html#11-337" title="Go to source code">BlockCypher/Rest/ApiContext.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#61-83" title="Go to source code">__construct</a>( <span><code><a href="class-BlockCypher.Auth.TokenCredential.html">BlockCypher\Auth\TokenCredential</a></code> <var>$credential</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$chain</var> = <span class="php-quote">'main'</span></span>, <span>string|null <var>$coin</var> = <span class="php-quote">'btc'</span></span>, <span>string|null <var>$version</var> = <span class="php-quote">'v1'</span></span>, <span>string|null <var>$requestId</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				<p>Construct</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Construct</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$credential</var></dt>
+						<dd></dd>
+						<dt><var>$chain</var></dt>
+						<dd></dd>
+						<dt><var>$coin</var></dt>
+						<dd></dd>
+						<dt><var>$version</var></dt>
+						<dd></dd>
+						<dt><var>$requestId</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="create" id="_create">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_create">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#85-128" title="Go to source code">create</a>( <span>string <var>$chain</var> = <span class="php-quote">'main'</span></span>, <span>string <var>$coin</var> = <span class="php-quote">'btc'</span></span>, <span>string <var>$version</var> = <span class="php-quote">'v1'</span></span>, <span><code><a href="class-BlockCypher.Auth.TokenCredential.html">BlockCypher\Auth\TokenCredential</a></code> <var>$credential</var> = <span class="php-keyword1">null</span></span>, <span>array|null <var>$config</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$blockCypherPartnerAttributionId</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Create new default ApiContext.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Create new default ApiContext.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$chain</var></dt>
+						<dd></dd>
+						<dt><var>$coin</var></dt>
+						<dd></dd>
+						<dt><var>$version</var></dt>
+						<dd></dd>
+						<dt><var>$credential</var></dt>
+						<dd></dd>
+						<dt><var>$config</var></dt>
+						<dd></dd>
+						<dt><var>$blockCypherPartnerAttributionId</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code>
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Exception.BlockCypherConfigurationException.html">BlockCypher\Exception\BlockCypherConfigurationException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setConfig" id="_setConfig">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setConfig">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#130-138" title="Go to source code">setConfig</a>( <span>array <var>$config</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets Config</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets Config</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$config</var></dt>
+						<dd>SDK configuration parameters</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addRequestHeader" id="_addRequestHeader">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addRequestHeader">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#140-147" title="Go to source code">addRequestHeader</a>( <span> <var>$name</var></span>, <span> <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setDefault" id="_setDefault">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setDefault">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#149-156" title="Go to source code">setDefault</a>( <span><code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code> <var>$apiContext</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$apiContext</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDefault" id="_getDefault">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDefault">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#158-166" title="Go to source code">getDefault</a>( )</code>
+
+			<div class="description short">
+				<p>Returns default ApiContext.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns default ApiContext.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getCredential" id="_getCredential">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-BlockCypher.Auth.SimpleTokenCredential.html">BlockCypher\Auth\SimpleTokenCredential</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getCredential">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#168-179" title="Go to source code">getCredential</a>( )</code>
+
+			<div class="description short">
+				<p>Get Credential</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get Credential</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Auth.SimpleTokenCredential.html">BlockCypher\Auth\SimpleTokenCredential</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getRequestHeaders" id="_getRequestHeaders">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getRequestHeaders">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#181-190" title="Go to source code">getRequestHeaders</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="resetRequestId" id="_resetRequestId">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_resetRequestId">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#192-203" title="Go to source code">resetRequestId</a>( )</code>
+
+			<div class="description short">
+				<p>Resets the requestId that can be used to set the BlockCypher-request-id
+header used for idempotency. In cases where you need to make multiple create calls
+using the same ApiContext object, you need to reset request Id.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Resets the requestId that can be used to set the BlockCypher-request-id
+header used for idempotency. In cases where you need to make multiple create calls
+using the same ApiContext object, you need to reset request Id.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getRequestId" id="_getRequestId">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getRequestId">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#232-244" title="Go to source code">getRequestId</a>( )</code>
+
+			<div class="description short">
+				<p>Get Request ID</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get Request ID</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getConfig" id="_getConfig">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getConfig">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#246-254" title="Go to source code">getConfig</a>( )</code>
+
+			<div class="description short">
+				<p>Gets Configurations</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Gets Configurations</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get" id="_get">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#256-265" title="Go to source code">get</a>( <span> <var>$searchKey</var></span> )</code>
+
+			<div class="description short">
+				<p>Gets a specific configuration from key</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Gets a specific configuration from key</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$searchKey</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getVersion" id="_getVersion">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getVersion">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#267-273" title="Go to source code">getVersion</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setVersion" id="_setVersion">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setVersion">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#275-283" title="Go to source code">setVersion</a>( <span>string <var>$version</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$version</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getChain" id="_getChain">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getChain">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#285-291" title="Go to source code">getChain</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setChain" id="_setChain">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setChain">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#293-301" title="Go to source code">setChain</a>( <span>string <var>$chain</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$chain</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getCoin" id="_getCoin">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getCoin">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#303-309" title="Go to source code">getCoin</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setCoin" id="_setCoin">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setCoin">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#311-319" title="Go to source code">setCoin</a>( <span>string <var>$coin</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$coin</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getBaseChainUrl" id="_getBaseChainUrl">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getBaseChainUrl">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#321-327" title="Go to source code">getBaseChainUrl</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getCoinSymbol" id="_getCoinSymbol">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getCoinSymbol">#</a>
+			<code><a href="source-class-BlockCypher.Rest.ApiContext.html#329-336" title="Go to source code">getCoinSymbol</a>( )</code>
+
+			<div class="description short">
+				<p>Map coin and chain to coin symbol</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Map coin and chain to coin symbol</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="defaultApiContext" id="$defaultApiContext">
+			<td class="attributes"><code>
+				public static 
+				<code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-BlockCypher.Rest.ApiContext.html#20-24" title="Go to source code"><var>$defaultApiContext</var></a>
+
+				<div class="description short">
+					<p>Default ApiContext when no ApiContext is provided as param.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Default ApiContext when no ApiContext is provided as param.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$defaultApiContext" class="anchor">#</a>
+					<code><span class="php-keyword1">null</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="credential" id="$credential">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-BlockCypher.Auth.SimpleTokenCredential.html">BlockCypher\Auth\SimpleTokenCredential</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-BlockCypher.Rest.ApiContext.html#26-32" title="Go to source code"><var>$credential</var></a>
+
+				<div class="description short">
+					<p>This is a placeholder for holding credential for the request
+If the value is not set, it would get the value from @\BlockCypher\Core\BlockCypherCredentialManager</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>This is a placeholder for holding credential for the request
+If the value is not set, it would get the value from @\BlockCypher\Core\BlockCypherCredentialManager</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$credential" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="chain" id="$chain">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-BlockCypher.Rest.ApiContext.html#34-38" title="Go to source code"><var>$chain</var></a>
+
+				<div class="description short">
+					<p>main|test|test3</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>main|test|test3</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$chain" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="coin" id="$coin">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-BlockCypher.Rest.ApiContext.html#40-44" title="Go to source code"><var>$coin</var></a>
+
+				<div class="description short">
+					<p>btc|doge|ltc|uro|bcy</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>btc|doge|ltc|uro|bcy</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$coin" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="version" id="$version">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-BlockCypher.Rest.ApiContext.html#46-50" title="Go to source code"><var>$version</var></a>
+
+				<div class="description short">
+					<p>v1</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>v1</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$version" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="requestId" id="$requestId">
+			<td class="attributes"><code>
+				protected  
+				null|string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-BlockCypher.Rest.ApiContext.html#52-59" title="Go to source code"><var>$requestId</var></a>
+
+				<div class="description short">
+					<p>Unique request id to be used for this call
+The user can either generate one as per application
+needs or let the SDK generate one</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Unique request id to be used for this call
+The user can either generate one as per application
+needs or let the SDK generate one</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$requestId" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class BlockCypher\Api\HDWallet</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-BlockCypher.Api.html" title="Summary of BlockCypher\Api"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-BlockCypher.html">
+							BlockCypher<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-BlockCypher.Api.html">
+							Api						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Auth.html">
+							Auth						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Builder.html">
+							Builder						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Client.html">
+							Client						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Common.html">
+							Common						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Converter.html">
+							Converter						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Core.html">
+							Core						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Crypto.html">
+							Crypto						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Handler.html">
+							Handler						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Rest.html">
+							Rest						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Transport.html">
+							Transport						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Validation.html">
+							Validation						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BlockCypher.Api.Address.html">Address</a></li>
+				<li><a href="class-BlockCypher.Api.AddressBalance.html">AddressBalance</a></li>
+				<li><a href="class-BlockCypher.Api.AddressKeyChain.html">AddressKeyChain</a></li>
+				<li><a href="class-BlockCypher.Api.AddressList.html">AddressList</a></li>
+				<li><a href="class-BlockCypher.Api.Block.html">Block</a></li>
+				<li><a href="class-BlockCypher.Api.Blockchain.html">Blockchain</a></li>
+				<li><a href="class-BlockCypher.Api.Error.html">Error</a></li>
+				<li><a href="class-BlockCypher.Api.Faucet.html">Faucet</a></li>
+				<li><a href="class-BlockCypher.Api.FaucetResponse.html">FaucetResponse</a></li>
+				<li><a href="class-BlockCypher.Api.FullAddress.html">FullAddress</a></li>
+				<li><a href="class-BlockCypher.Api.HDAddress.html">HDAddress</a></li>
+				<li><a href="class-BlockCypher.Api.HDChain.html">HDChain</a></li>
+				<li class="active"><a href="class-BlockCypher.Api.HDWallet.html">HDWallet</a></li>
+				<li><a href="class-BlockCypher.Api.HDWalletGenerateAddressResponse.html">HDWalletGenerateAddressResponse</a></li>
+				<li><a href="class-BlockCypher.Api.MicroTX.html">MicroTX</a></li>
+				<li><a href="class-BlockCypher.Api.NullData.html">NullData</a></li>
+				<li><a href="class-BlockCypher.Api.PaymentForward.html">PaymentForward</a></li>
+				<li><a href="class-BlockCypher.Api.PaymentForwardCallback.html">PaymentForwardCallback</a></li>
+				<li><a href="class-BlockCypher.Api.RelatedResources.html">RelatedResources</a></li>
+				<li><a href="class-BlockCypher.Api.TX.html">TX</a></li>
+				<li><a href="class-BlockCypher.Api.TXConfidence.html">TXConfidence</a></li>
+				<li><a href="class-BlockCypher.Api.TXHex.html">TXHex</a></li>
+				<li><a href="class-BlockCypher.Api.TXInput.html">TXInput</a></li>
+				<li><a href="class-BlockCypher.Api.TXOutput.html">TXOutput</a></li>
+				<li><a href="class-BlockCypher.Api.TXRef.html">TXRef</a></li>
+				<li><a href="class-BlockCypher.Api.TXSkeleton.html">TXSkeleton</a></li>
+				<li><a href="class-BlockCypher.Api.Wallet.html">Wallet</a></li>
+				<li><a href="class-BlockCypher.Api.WalletGenerateAddressResponse.html">WalletGenerateAddressResponse</a></li>
+				<li><a href="class-BlockCypher.Api.WalletInfo.html">WalletInfo</a></li>
+				<li><a href="class-BlockCypher.Api.WebHook.html">WebHook</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class HDWallet</h1>
+
+
+	<div class="description">
+	<p>Class HDWallet</p>
+
+<p>A HDWallet contains addresses derived from a single seed. Like normal wallets,
+it can be used interchangeably with all the Address API endpoints.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-BlockCypher.Common.BlockCypherModel.html"><span>BlockCypher\Common\BlockCypherModel</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-BlockCypher.Common.BlockCypherBaseModel.html"><span>BlockCypher\Common\BlockCypherBaseModel</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-BlockCypher.Common.BlockCypherResourceModel.html"><span>BlockCypher\Common\BlockCypherResourceModel</span></a>
+			
+			 implements 
+				<a href="class-BlockCypher.Rest.IResource.html"><span>BlockCypher\Rest\IResource</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>BlockCypher\Api\HDWallet</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BlockCypher.html">BlockCypher</a>\<a href="namespace-BlockCypher.Api.html">Api</a><br>
+		<b>Package:</b> BlockCypher\Api<br>
+
+			<b>Located at</b> <a href="source-class-BlockCypher.Api.HDWallet.html#11-337" title="Go to source code">BlockCypher/Api/HDWallet.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="get" id="_get" class="deprecated">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-BlockCypher.Api.HDWallet.html">BlockCypher\Api\HDWallet</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#28-60" title="Go to source code">get</a>( <span>string <var>$walletName</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code> <var>$apiContext</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BlockCypher.Transport.BlockCypherRestCall.html">BlockCypher\Transport\BlockCypherRestCall</a></code> <var>$restCall</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Obtain the Wallet resource for the given identifier.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Obtain the Wallet resource for the given identifier.</p>
+
+					<h4>Deprecated</h4>
+					<div class="list">
+							since version 1.2. Use HDWalletClient.<br>
+					</div>
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$walletName</var></dt>
+						<dd></dd>
+						<dt><var>$params</var></dt>
+						<dd>Parameters.</dd>
+						<dt><var>$apiContext</var></dt>
+						<dd>is the APIContext for this call. It can be used to pass dynamic configuration and credentials.</dd>
+						<dt><var>$restCall</var></dt>
+						<dd>is the Rest Call Service that is used to make rest calls</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Api.HDWallet.html">BlockCypher\Api\HDWallet</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getOnlyAddresses" id="_getOnlyAddresses" class="deprecated">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-BlockCypher.Api.HDWallet.html">BlockCypher\Api\HDWallet</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getOnlyAddresses">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#62-95" title="Go to source code">getOnlyAddresses</a>( <span>string <var>$walletName</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code> <var>$apiContext</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BlockCypher.Transport.BlockCypherRestCall.html">BlockCypher\Transport\BlockCypherRestCall</a></code> <var>$restCall</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Get all addresses in a given wallet.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get all addresses in a given wallet.</p>
+
+					<h4>Deprecated</h4>
+					<div class="list">
+							since version 1.2. Use HDWalletClient.<br>
+					</div>
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$walletName</var></dt>
+						<dd></dd>
+						<dt><var>$params</var></dt>
+						<dd>Parameters.</dd>
+						<dt><var>$apiContext</var></dt>
+						<dd>is the APIContext for this call. It can be used to pass dynamic configuration and credentials.</dd>
+						<dt><var>$restCall</var></dt>
+						<dd>is the Rest Call Service that is used to make rest calls</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Api.HDWallet.html">BlockCypher\Api\HDWallet</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="create" id="_create" class="deprecated">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-BlockCypher.Api.HDWallet.html">BlockCypher\Api\HDWallet</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_create">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#97-126" title="Go to source code">create</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code> <var>$apiContext</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BlockCypher.Transport.BlockCypherRestCall.html">BlockCypher\Transport\BlockCypherRestCall</a></code> <var>$restCall</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Create a new HDWallet.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Create a new HDWallet.</p>
+
+					<h4>Deprecated</h4>
+					<div class="list">
+							since version 1.2. Use HDWalletClient.<br>
+					</div>
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd>Parameters</dd>
+						<dt><var>$apiContext</var></dt>
+						<dd>is the APIContext for this call. It can be used to pass dynamic configuration and credentials.</dd>
+						<dt><var>$restCall</var></dt>
+						<dd>is the Rest Call Service that is used to make rest calls</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Api.HDWallet.html">BlockCypher\Api\HDWallet</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="delete" id="_delete" class="deprecated">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_delete">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#128-156" title="Go to source code">delete</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code> <var>$apiContext</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BlockCypher.Transport.BlockCypherRestCall.html">BlockCypher\Transport\BlockCypherRestCall</a></code> <var>$restCall</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Deletes the HDWallet identified by wallet_id for the application associated with access token.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Deletes the HDWallet identified by wallet_id for the application associated with access token.</p>
+
+					<h4>Deprecated</h4>
+					<div class="list">
+							since version 1.2. Use HDWalletClient.<br>
+					</div>
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd>Parameters</dd>
+						<dt><var>$apiContext</var></dt>
+						<dd>is the APIContext for this call. It can be used to pass dynamic configuration and credentials.</dd>
+						<dt><var>$restCall</var></dt>
+						<dd>is the Rest Call Service that is used to make rest calls</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getName" id="_getName">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getName">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#158-164" title="Go to source code">getName</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateAddress" id="_generateAddress" class="deprecated">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-BlockCypher.Api.HDWalletGenerateAddressResponse.html">BlockCypher\Api\HDWalletGenerateAddressResponse</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateAddress">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#166-198" title="Go to source code">generateAddress</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code> <var>$apiContext</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BlockCypher.Transport.BlockCypherRestCall.html">BlockCypher\Transport\BlockCypherRestCall</a></code> <var>$restCall</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>A new address is generated similar to Address Generation and associated it with the given wallet.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>A new address is generated similar to Address Generation and associated it with the given wallet.</p>
+
+					<h4>Deprecated</h4>
+					<div class="list">
+							since version 1.2. Use HDWalletClient.<br>
+					</div>
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd>Parameters</dd>
+						<dt><var>$apiContext</var></dt>
+						<dd>is the APIContext for this call. It can be used to pass dynamic configuration and credentials.</dd>
+						<dt><var>$restCall</var></dt>
+						<dd>is the Rest Call Service that is used to make rest calls</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Api.HDWalletGenerateAddressResponse.html">BlockCypher\Api\HDWalletGenerateAddressResponse</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getToken" id="_getToken">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getToken">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#200-206" title="Go to source code">getToken</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setToken" id="_setToken">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setToken">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#208-216" title="Go to source code">setToken</a>( <span>string <var>$token</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$token</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setName" id="_setName">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setName">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#218-226" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getChains" id="_getChains">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-BlockCypher.Api.HDChain.html">BlockCypher\Api\HDChain</a>[]</code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getChains">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#228-234" title="Go to source code">getChains</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Api.HDChain.html">BlockCypher\Api\HDChain</a>[]</code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setChains" id="_setChains">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setChains">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#236-244" title="Go to source code">setChains</a>( <span><code><a href="class-BlockCypher.Api.HDChain.html">BlockCypher\Api\HDChain</a>[]</code> <var>$chains</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$chains</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isHd" id="_isHd">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isHd">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#246-252" title="Go to source code">isHd</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getHd" id="_getHd">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getHd">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#254-260" title="Go to source code">getHd</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setHd" id="_setHd">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setHd">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#262-270" title="Go to source code">setHd</a>( <span>boolean <var>$hd</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$hd</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getExtendedPublicKey" id="_getExtendedPublicKey">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getExtendedPublicKey">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#272-278" title="Go to source code">getExtendedPublicKey</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setExtendedPublicKey" id="_setExtendedPublicKey">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setExtendedPublicKey">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#280-288" title="Go to source code">setExtendedPublicKey</a>( <span>string <var>$extended_public_key</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$extended_public_key</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addSubchainIndex" id="_addSubchainIndex">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addSubchainIndex">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#290-305" title="Go to source code">addSubchainIndex</a>( <span>integer <var>$subchainIndex</var></span> )</code>
+
+			<div class="description short">
+				<p>Append subchain index to the list.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Append subchain index to the list.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$subchainIndex</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getSubchainIndexes" id="_getSubchainIndexes">
+
+			<td class="attributes"><code>
+				 public 
+				int[]
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getSubchainIndexes">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#307-313" title="Go to source code">getSubchainIndexes</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						int[]
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setSubchainIndexes" id="_setSubchainIndexes">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setSubchainIndexes">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#315-323" title="Go to source code">setSubchainIndexes</a>( <span>int[] <var>$subchain_indexes</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$subchain_indexes</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="removeSubchainIndex" id="_removeSubchainIndex">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_removeSubchainIndex">#</a>
+			<code><a href="source-class-BlockCypher.Api.HDWallet.html#325-336" title="Go to source code">removeSubchainIndex</a>( <span>integer <var>$subchainIndex</var></span> )</code>
+
+			<div class="description short">
+				<p>Remove subchain index from the list.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Remove subchain index from the list.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$subchainIndex</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-BlockCypher.Common.BlockCypherResourceModel.html#methods">BlockCypher\Common\BlockCypherResourceModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherResourceModel.html#_executeCall">executeCall()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherResourceModel.html#_getApiContext">getApiContext()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherResourceModel.html#_getChainUrlPrefix">getChainUrlPrefix()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherResourceModel.html#_getCoinSymbol">getCoinSymbol()</a></code>
+			</p>
+		</div>
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-BlockCypher.Common.BlockCypherBaseModel.html#methods">BlockCypher\Common\BlockCypherBaseModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_addError">addError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getAllErrorMessages">getAllErrorMessages()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getError">getError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getErrorMessages">getErrorMessages()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getErrors">getErrors()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_removeError">removeError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_setError">setError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_setErrors">setErrors()</a></code>
+			</p>
+		</div>
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-BlockCypher.Common.BlockCypherModel.html#methods">BlockCypher\Common\BlockCypherModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___construct">__construct()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___get">__get()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___isset">__isset()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___set">__set()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___toString">__toString()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___unset">__unset()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_fromArray">fromArray()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_fromJson">fromJson()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_getList">getList()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_setCredential"><span class="deprecated">setCredential()</span></a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_toArray">toArray()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_toJSON">toJSON()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-BlockCypher.Common.BlockCypherModel.html#properties">BlockCypher\Common\BlockCypherModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#$credential"><var>$credential</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
