@@ -312,7 +312,7 @@ class BlockCypherModel
         foreach ($param as $k => $v) {
             if ($v instanceof BlockCypherModel) {
                 $ret[$k] = $v->toArray();
-            } else if (sizeof($v) <= 0 && is_array($v)) {
+            } else if (@sizeof($v) <= 0 && is_array($v)) {
                 $ret[$k] = array();
             } else if (is_array($v)) {
                 $ret[$k] = $this->_convertToArray($v);
@@ -323,7 +323,7 @@ class BlockCypherModel
         // If the array is empty, which means an empty object,
         // we need to convert array to StdClass object to properly
         // represent JSON String
-        if (sizeof($ret) <= 0) {
+        if (@sizeof($ret) <= 0) {
             $ret = new BlockCypherModel();
         }
         return $ret;
