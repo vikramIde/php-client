@@ -82,7 +82,19 @@ class BlockCypherCoinSymbolConstants
             'pow' => 'sha',
             'example_address' => 'CFr99841LyMkyX5ZTGepY58rjXJhyNGXHf',
             "address_first_char_list" => array('B', 'C', 'D')
+        ),
+        array(
+            'coin_symbol' => 'eth',
+            'display_name' => 'Ethereum',
+            'display_shortname' => 'ETH',
+            'blockcypher_code' => 'eth',
+            'blockcypher_network' => 'main',
+            'currency_abbrev' => 'eth',
+            'pow' => 'sha',
+            'example_address' => 'CFr99841LyMkyX5ZTGepY58rjXJhyNGXHf',
+            "address_first_char_list" => array('B', 'C', 'D')
         )
+
     );
 
     /**

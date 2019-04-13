@@ -38,7 +38,7 @@ if (ini_set('serialize_precision', 17) === false) {
 
 // Replace these values by entering your own token by visiting https://accounts.blockcypher.com/
 /** @noinspection SpellCheckingInspection */
-$token = 'c0afcccdde5081d6429de37d16166ead';
+$token = 'd9f5ce6107b84b3aa5fee7b810d258f8';
 
 if (isset($_GET['token'])) $token = $_GET['token'];
 if (!validateToken($token)) {
