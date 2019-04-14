@@ -38,6 +38,12 @@ class CoinSymbolNetworkMapping
                     ->setHDPrivByte('02fd3955')
                     ->setNetMagicBytes('c0c0c0c0');
                 break;
+            case 'eth':
+                $network = NetworkFactory::create('1e', '16', '9e')
+                    ->setHDPubByte('02fd3929')
+                    ->setHDPrivByte('02fd3955')
+                    ->setNetMagicBytes('c0c0c0c0');
+                break;
             case 'dash':
                 $network = NetworkFactory::dash();
                 break;
