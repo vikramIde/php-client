@@ -23,7 +23,7 @@ try {
     ResultPrinter::printResult("Created MicroTX", "MicroTX", $microTXToSign->getHash(), $microTX, $microTXToSign);
 
     /// Sign
-    $microTXSigned = $microTXToSign->sign("b030b91d3d5f361427af634ff775d355d173ecd5979e549865fa44cf6aa93d6d"); // Hex private key
+    $microTXSigned = $microTXToSign->sign("#######"); // Hex private key
 
     /// Send
     $microTXSent = $microTXClient->send($microTXSigned);

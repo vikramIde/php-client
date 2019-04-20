@@ -17,7 +17,7 @@ try {
     // $microTX = $microTXClient->push('f86d048503f5476a0083027f4b941a8c8adfbe1c59e8b58cc0d515f07b7225f51c72882a45907d1bef7c00801ba0e68be766b40702e6d9c419f53d5e053c937eda36f0e973074d174027439e2b5da0790df3e4d0294f92d69104454cd96005e21095efd5f2970c2829736ca39195d8');
     $microTXClient = new \BlockCypher\Client\MicroTXClient($apiContexts['ETH.main']);
  $microTX = $microTXClient->sendSigned(
-        "2c2cc015519b79782bd9c5af66f442e808f573714e3c4dc6df7d79c183963cff", // private key
+        "################", // private key
         "C4MYFr4EAdqEeUKxTnPUF3d3whWcPMz1Fi", // to address
         10000 );// value (satoshis)
 } catch (Exception $ex) {

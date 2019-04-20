@@ -28,7 +28,7 @@ $input->addAddress("9a82fd9cbf193d48f46489d8a3dfcd7edbfbf991");
 /// Tx outputs
 $output = new \BlockCypher\Api\TXOutput();
 $output->addAddress("0x4c0213ba22ce64c23ab114cff5185dd3cd9b2051");
-$output->setValue(500); // Satoshis
+$output->setValue(6000); // Satoshis
 
 /// Tx
 $tx = new \BlockCypher\Api\TX();
@@ -36,7 +36,7 @@ $tx->addInput($input);
 $tx->addOutput($output);
 
 //Private key 
-$privateKey = "b030b91d3d5f361427af634ff775d355d173ecd5979e549865fa44cf6aa93d6d";
+$privateKey = "##########################";
 /// For Sample Purposes Only.
 $request = clone $tx;
 
@@ -44,9 +44,8 @@ $txClient = new \BlockCypher\Client\TXClient($apiContexts['ETH.main']);
 
 try {
     $output = $txClient->create($tx);
-    var_dump($output->tosign[0]);
     $hex = signTransaction($output->tosign[0],$privateKey);
-    $output->signatures=[$hex];
+    $output->signatures=[$hex];//create the hex
     $microTX = $txClient->send($output,$apiContexts['ETH.main']);
 
 } catch (Exception $ex) {

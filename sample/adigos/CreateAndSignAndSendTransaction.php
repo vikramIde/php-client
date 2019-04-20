@@ -25,7 +25,7 @@ $txClient = new \BlockCypher\Client\TXClient($apiContexts['ETH.main']);
 // Private key must have the same format as returned by Generate Address Endpoint:
 // <a href="http://dev.blockcypher.com/?#generate-address-endpoint">http://dev.blockcypher.com/?#generate-address-endpoint</a>
 $privateKeys = array(
-    "b030b91d3d5f361427af634ff775d355d173ecd5979e549865fa44cf6aa93d6d" // Address: n3D2YXwvpoPg8FhcWpzJiS3SvKKGD8AXZ4
+    "###############" // Address: n3D2YXwvpoPg8FhcWpzJiS3SvKKGD8AXZ4
 );
 
 /// Sign TXSkeleton
